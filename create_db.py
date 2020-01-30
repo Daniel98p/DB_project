@@ -16,6 +16,6 @@ class Expenses(Base):
         return f"<Expenses(price={self.price}, date={self.date}, name={self.name}, category={self.category})>"
 
 
-if __name__ == '__main__':
+def create_table():
     engine = create_engine("sqlite:///:memory:", echo=True)
     Base.metadata.create_all(engine)
