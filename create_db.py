@@ -12,6 +12,9 @@ class Expenses(Base):
     name = Column(String, name="name")
     category = Column(String, name="category")
 
+    def __repr__(self):
+        return f"<Expenses(price={self.price}, date={self.date}, name={self.name}, category={self.category})>"
+
 
 if __name__ == '__main__':
     engine = create_engine("sqlite:///:memory:", echo=True)
