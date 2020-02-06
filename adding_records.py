@@ -36,5 +36,4 @@ def add_record():
     session.close()
 
 
-if __name__ == '__main__':
-    add_record()
+
